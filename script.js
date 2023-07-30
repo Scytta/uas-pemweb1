@@ -23,8 +23,8 @@ const pertanyaan = {
 		{
 			no:2,
 			soal:"Dengarkan <i>audio</i> berikut ini",
-			pilgan:["sdfsdfsdf","dasfdsdsf","sdfsdfs"],
-			link:"jlknlknlkn"
+			pilgan:["Martha applied for a visa last month.","Martha's visa will last for only a month","Martha arrived last month without her visa.","One month ago Martha got her visa."],
+			link:"assets/LATIHAN SOAL TOEFL LISTENING - 2 (320 kbps).mp3"
 		},
 
 	]
@@ -37,11 +37,15 @@ function mapping(urutan){
 	const no = document.getElementById("no");
 	const soal = document.getElementById("soal");
 	const pilgan = document.getElementsByClassName("pilgan");
-
+    var prev = document.getElementById("prev-audio");
+    var next = document.getElementById("next-audio")
+    
+    next.src = data[urutan].link
+    prev.load()
 
 	no.innerHTML = data[urutan].no
 	soal.innerHTML = data[urutan].soal
-
+    
 	data[urutan].pilgan.forEach((element,index) => {
 		pilgan[index].innerHTML = element
 	}); 
