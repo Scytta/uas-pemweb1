@@ -48,35 +48,61 @@
     </div>
     <div class="mid">
         <div class="grup-soal">
-            <p>1. Dengarkan <i>audio</i> berikut ini</p>
+          <div style="display: flex;">
+            <p id="no" style="margin-right: 5px;">1.</p>
+            <p id="soal">Dengarkan <i>audio</i> berikut ini</p>
+          </div> 
             <audio controls>
                 <source src="assets/LATIHAN SOAL TOEFL LISTENING - 1 (320 kbps).mp3" type="audio/mpeg">
             </audio>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="pilgan1" id="pilgan1a">
               <label class="form-check-label" for="pilgan1a">
-                He'll correct the exams this afternoon.
+                <p class="pilgan">
+                  He'll correct the exams this afternoon.
+                </p>
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="pilgan1" id="pilgan1b" checked>
               <label class="form-check-label" for="pilgan1b">
-                The exam will be at noon.
+                <p class="pilgan">
+                  He'll correct the exams this afternoon.
+                </p>
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="pilgan1" id="pilgan1c" checked>
               <label class="form-check-label" for="pilgan1c">
-                He will collect the exams at 12:00.
+                <p class="pilgan">
+                  He'll correct the exams this afternoon.
+                </p>
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="pilgan1" id="pilgan1d" checked>
               <label class="form-check-label" for="pilgan1d">
-                The tests will be graded by noon.
+                <p class="pilgan">
+                  He'll correct the exams this afternoon.
+                </p>
               </label>
             </div>
+            <button class="tombol" onclick="counter()">Next</button>
         </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
