@@ -56,3 +56,23 @@ a.navbar-brand > b {
 audio {
     margin-left: 18px;
 }
+
+.tabel-anggota {
+    /* display: flex; */
+    margin-top: 25px;
+    /* justify-content: end; */
+    /* margin-right: 150px; */
+    font-size: 22px;
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}

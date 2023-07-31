@@ -10,8 +10,6 @@
 </head>
 <body>
     <div class="top">
-        <!-- <img src="assets/LOGO.png" alt="logo-unsia" class="logo-head">
-        <h2 class="top-unsia">Universitas Siber Asia</h2> -->
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <img src="assets/LOGO.png" alt="logo-unsia" class="logo-head">
@@ -22,12 +20,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <!-- <a class="navbar-brand nav-link active" aria-current="page" href="#">Home</a> -->
                   <p id="clock" style="margin-top: 6px;">Loading...</p>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="navbar-brand nav-link" href="#">Link</a>
-                </li> -->
                 <span class="d-flex">
                   <img src="assets/wallpaperflare.com_wallpaper.jpg" alt="iseng" width="50px" height="50px" class="rounded-circle" style="margin: 0 5px 0 20px;">
                 <li class="nav-item dropdown">
@@ -87,11 +81,13 @@
                 </p>
               </label>
             </div>
-            <button class="tombol" onclick="counter()">Next</button>
+            <div class="d-flex justify-content-end">
+              <button class="tombol" onclick="counter()">Next</button>
+            </div>
         </div>
     </div>
     <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
+      <div class="accordion-item" style="margin-top: 50px;">
         <h2 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             Need help?
@@ -104,15 +100,53 @@
         </div>
       </div>
     </div>
-
+    <div class="row" style="margin-top: 50px;">
+      <div class="col">
+        <div class="table-form">
+          <!-- TABLE START -->
+            <div>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>NIM</td>
+                </tr>
+                <tr>
+                  <td>Daffa Ulwan</td>
+                  <td>22040</td>
+                </tr>
+                <tr>
+                  <td>Teguh</td>
+                  <td>22040</td>
+                </tr>
+                <tr>
+                  <td>Han</td>
+                  <td>22040</td>
+                </tr>
+                <tr>
+                  <td>Jess</td>
+                  <td>22040</td>
+                </tr>
+              </table>
+            </div>
+          <!-- TABLE END -->
+          </div>
+      </div>
+      <div class="col">
+        <div>
+          <form action="/proses_kirim" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </div>  
     <script src="script.js"></script>
-    <!-- Audio -->
-    <!-- <div class="music">
-        <audio controls autoplay>
-            <source src="assets/music.mp3" type="audio/mpeg">
-        </audio>
-    </div> -->
-</body>
+  </body>
 </html>
 
 
